@@ -1,23 +1,9 @@
 const convertToCelsius = function(farTemp) {
-  let result = Math.round(((farTemp-32)*(5/9)) * 1e1)/1e1;
-
-  // if result is a clean number, return a clean number with no decimal.
-  if(result%1 === 0){
-    result = Math.round(result);
-  }
-
-  return result;
+  return Math.round(((farTemp-32)*(5/9)) * 10)/10;
 };
 
 const convertToFahrenheit = function(celTemp) {
-  let result = Math.round(((celTemp*(9/5))+32) * 1e1)/1e1;
-
-  // if result is a clean number, return a clean number with no decimal.
-  if(result%1 === 0){
-    result = Math.round(result);
-  }
-
-  return result;
+  return Math.round(((celTemp*(9/5))+32) * 10)/10;
 };
 
 // Do not edit below this line
